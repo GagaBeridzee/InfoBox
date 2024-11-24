@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>InfoBox</title>
+  <meta content="infobox არის ინფორმაციული ტიპის ვებ-გვერდი სადაც შეგიძლია შეიტყო მეტი ტექნოლოგიების შესახებ" name="description">
+  <meta content="ტექნოლოგიები, ტექნოლოგიების განვითარება, ტექნოლოგიების დადებითი და უარყოფითი მხარეები, ტექნოლოგიების ევოლუცია, პირველი კომპიუტერი" name="keywords">
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3842562566627557"
+          crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <button class="btn settings-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+    aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">სანავიგაციო მენიუ</h5>
+      <button type="button" class="close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="links-settings">
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-house-chimney"></i>&nbsp;&nbsp;სახლი</a>
+          </li>
+          <li>
+            <a href="https://todo.microsoft.com/"><i class="fa-solid fa-note-sticky"></i>&nbsp;&nbsp;InfoBox სანიშნი</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="links-settings">
+        <ul>
+          <li>
+            <!-- Button trigger modal -->
+            <a type="button" class="" data-toggle="modal" data-target="#settings">
+              <i class="fa-solid fa-gear"></i> &nbsp;&nbsp;პარამეტრები
+            </a>
+      </div>
+      </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <div class="set-item">
+            <p class="text-p">რეჟიმის შეცვლა</p>
+            <div id="dark-body">
+              <div id="dark-button"></div>
+            </div>
+          </div>
+
+          <div class="set-item">
+            <p class="text-p">Scrollbar ფუნქცია</p>
+            <div id="scroll-body">
+              <div id="scroll-button"></div>
+            </div>
+          </div>
+
+          <div class="set-item">
+            <p class="text-p">მთავარი ფერის შეცვლა (თვალის კომფორტი)</p>
+            <div id="round-body">
+              <div id="round-button"></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn close-btn" data-dismiss="modal"><i
+              class="fa-solid fa-angle-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+          data-aos="fade-up" data-aos-delay="200">
+          <h1>მოგესალმებით InfoBox-ზე!</h1>
+          <h2 id="feature-text"></h2>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>მონახაზი</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+             <b>ვებ-გვერდში წარმოდგენილია ინფორმაცია კატეგორიების მიხედვით, ასევე დამატებულია კვლევის შედეგები წრიული და ხაზოვანი დიაგრამის სახით და ფოტოსურათები:</b>
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> ტექნოლოგიების განვითარება</li>
+              <li><i class="ri-check-double-line"></i> ტექნოლოგიების დადებითი და უარყოფითი მხარეები</li>
+              <li><i class="ri-check-double-line"></i> მომავლის ტექნოლოგიები</li>
+              <li><i class="ri-check-double-line"></i> მსოფლიოს მაშტაბით ჩატარებული კვლევის შედეგები</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              შენ შეგიძლია წაიკითხო ვებ-გვერდზე არსებული ინფორმაცია შეისწავლო და გაიგო მეტი ტექნოლოგიების შესახებ თუ რა გავლენა აქვთ მათ ადამიანების ყოველდღიურ ყოფა ცხოვრებაში. თუ თქვენ ამ ვებ-გვერდს მისცემთ ხმას ვარსკვლავების სახით ჩვენ საშუალება მოგვეცემა გავიგოთ რისი გაუმჯობესებაა საჭირო და შევეცადოთ გამოვასწოროთ იგი, ამით ძალიან დაგვეხმარებით!
+            </p>
+            <a href="#" class="btn-learn-more" type="button" data-toggle="modal" data-target="#rate">ხმის მიცემა</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="rate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ხმის მიცემა</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="rating-box">
+          <header>შეაგვაფასეთ ვარსკვლავების დახმარებით</header>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h4 class="text-center">ტექნოლოგიების განვითარება</h4>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-11"><span>01</span>
+                    საკომუნიკაციო ტექნოლოგიების განვითარება <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-11" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      XX საუკუნეში კაცობრიობა ერთბაშად, იქამდე არნახული ტემპებით განვითარდა. სულ რამდენიმე წელიწადში
+                      საშუალო ადამიანის ცხოვრების სტილი იმაზე მეტად გამოიცვალა, ვიდრე ეს მანამდე საუკუნეების
+                      განმავლობაში მომხდარა. ყოველდღიურ ცხოვრებაზე ალბათ ყველაზე ძლიერი ზემოქმედება საკომუნიკაციო
+                      ტექნოლოგიებმა მოახდინეს, კერძოდ კომპიუტერისა და ინტერნეტის შეჭრამ ადამიანის ყოფაში. საზოგადოების
+                      ნაწილის აზრით, ეს ტექნოლოგიები დაუპატიჟებლად მოვიდნენ და ჩვენც მხოლოდ გულუბრყვილობით მივეცით
+                      შესაძლებლობა დაეკავებინათ ისეთი ფუნდამენტალური ადგილი, როგორიც მანამდე წიგნს ეკავა. ისინი
+                      ფიქრობენ, რომ ეს ცვლილება უარყოფითად აისახა წიგნიერების დონეზე, თუმცა ჩემი აზრით ეს მხოლოდ ფუჭი
+                      ღელვაა.
+                      <span>&nbsp;</span><br>
+                      <span class="text-right mt-3">(გაგა ბერიძე)</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-13"><span>02</span>
+                    პირველი კომპიუტერი <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-13" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      XX საუკუნეში ტექნიკის მნიშვნელოვანი განვითარება დაიწყო, კერძოდ კი კომპიუტერული სისტემების.
+                      კომპიუტერმა ჩვენი ცხოვრების წესი დიდად შეცვალა, ადვილი გახდა: ინფორმაციის მოძიება, სხვადასხვა
+                      სამუშაოების შესრულება, კონტაქტის დამყარება მსოფლიოს მაშტაბით და ა.შ. აქამდე სასურველი ინფორმაციას
+                      თუ ვიძიებდით ბიბლიოთეკებსა და სხვადასხვა ლიტერატურულ დაწესებულებებში, დღეს უკვე მარტივად, მაუსის
+                      რამდენიმე დაწკაპუნებით შეგვიძლია ნებისმიერი ინფორმაცია ვიხილოთ კომპიუტერის დახმარებით.
+
+                      პირველი კომპიუტერის შექმის იდეა გაჩნდა 1940 წელს. იდეა კი 1945 წელს განხორციელდა ამერიკელი
+                      ფიზიკოსების ჯონ ეკერტმისა (Jon Eckert) და ჯონ მოუჩის (Jone Mauchiy) მიერ. პირველ კომპიუტერს კი
+                      სახელად ENIAC უწოდეს.
+
+                      ეს უზარმაზარი "ყუთი" ერთ დიდ ოთახში იდგა და მას მხოლოდ არითმეტიკული გამოთვლები შეეძლო. მართალია იმ
+                      დროისთვის პირველი კომპიუტერი იყო, მაგრამ, სრულიად უსარგებლო, რადგან მხოლოდ გამოთვლებისთვის
+                      დაახლოებით მოიხმარდა იმდენ ელექტრო-ენერგიას რამდენსაც 1 დიდი ფაბრიკა-ქარხანა.
+
+                      ალბათ ჯონ ეკრეტმი და ჯონ მოუჩი ვერც კი წარმოიდგენდნენ, რომ XXI საუკუნეში გამოიგონებდნენ იგივე
+                      შესაძლებლობის პატარა მანქანას, ე.წ კალკულატორს, რომელიც სიგრძით და სიგანით სულ რამდენიმე
+                      სანტიმეტრია და ძალიან ცოტა ელექტრო-ენერგიას მოიხმარს.
+
+
+                      დღესდღეობით კი კომპიუტერულმა ტექნიკამ განვითარების პიკს მიაღწია, XX საუკუნის ტექნიკასთან შედარებით
+                      და მგონია, რომ მომავალში ისეთი განვითარება შეიძლება ვიხილოთ, რასაც დღეს ვერ წარმოვიდგენთ, როგორც
+                      ვერ წარმოიდგენდა XX საუკუნის 2 ფიზიკოსი, რომლებმაც პირველი კომპიუტერი შექმნეს.
+                      <span>&nbsp;</span><br>
+                      <span class="text-right mt-3">(იოანე რევაზიშვილი)</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-133"><span>02</span>
+                    პირველი ხელით სატარებელი მობილური <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-133" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      მობილური ტელეფონი — ტელეფონი, რომელსაც ფართო გეოგრაფიულ არეალში მოძრაობის მიუხედავად,
+                      რადიოსიგნალის საშუალებით შეუძლია სატელეფონო ზარების მიღება და განხორციელება. მოწყობილობა ამას
+                      ფიჭური კავშირის საშუალებით აკეთებს, რასაც მობილური ტელეფონის ოპერატორი უზრუნველყოფს. ამის
+                      საპირისპიროდ, არსებობს რადიოტელეფონი, რომელიც მხოლოდ მოკლე მანძილზე, საკუთარი საბაზო სადგურის
+                      ახლომახლო მოქმედებს.
+
+                      გარდა სატელეფონო ფუნქციისა, თანამედროვე მობილურ ტელეფონებს სხვა მრავალი სერვისის მხარდაჭერაც აქვს,
+                      მათ შორისაა მოკლე ტექსტური შეტყობინებები, მულტიმედიური შეტყობინებები (MMS), ელექტრონული ფოსტა,
+                      წვდომა ინტერნეტთან, ახლო მანძილის უკაბელო კომუნიკაციები (infrared, Bluetooth), ბიზნეს აპლიკაციები,
+                      თამაშები და ფოტოგრაფია. მობილურ ტელეფონებს, რომელთაც ეს და სხვა ზოგადი კომპიუტერული შესაძლებლობები
+                      აქვს, სმარტფონი ეწოდება.
+
+                      პირველი ხელით სატარებელი ტელეფონი 1973 წელს კომპანია მოტოროლას თანამშრომლებმა, ჯონ ფრენსის
+                      მიტჩელმა და დოქტორმა მარტინ კუპერმა წარმოადგინეს. მათ შექმნეს მოწყობილობა, რომელიც 2 კილოგრამს
+                      იწონიდა. 1983 წელს, გამოვიდა პირველი კომერციული მობილური Motorola DynaTAC. 1983-დან 2014 წლამდე,
+                      მობილური ტელეფონების რაოდენობა ნულიდან 7 მილიარდამდე გაიზარდა; პროპორციულად 100%-ით მოიცვა მსოფლიო
+                      მოსახლეობა და ეკონომიკური პირამიდის ფსკერამდე დავიდა. 2014 წლისათვის, მობილური ტელეფონების
+                      მოწინავე მწარმოებლები იყვნენ Samsung, Nokia, Apple და LG.
+                      <span>&nbsp;</span><br>
+                      <span class="text-right mt-3">(ტარიელ კოტოვი)</span>
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+            style='background-image: url("assets/img/personal-computer.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h4 class="text-center">ტექნოლოგიების <b>დადებითი</b> და <b>უარყოფითი</b> მხარეები</h4>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span>
+                    ტექნოლოგიების დადებითი მხარეები <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      1. ეხმარება მოსწავლეებს საშინაო დავალების შესრულებაში. <br>
+                      2. ხელი შეუწყოს კვლევის პროცესს მრავალ სხვადასხვა თემაზე. <br>
+                      3. ისწავლეთ ახალგაზრდა კურსდამთავრებულთა მართლწერის და დათვლის საფუძვლები სახალისოდ. <br>
+                      4. მოსწავლეებს საშუალებას აძლევს ისწავლონ რაიმე კონკრეტული მათთვის საჭირო დროს. <br>
+                      5. სწავლის შესაძლებლობის გაზრდა, სადაც შესაძლებელია ტექნოლოგიების საშუალებით დაესწროთ სასწავლო
+                      კურსებს და ისწავლოს სხვადასხვა გაკვეთილები უშუალოდ ინტერნეტის დახმარებით. <br>
+                      <span>&nbsp;</span><br>
+                      <span class="text-right mt-3">(ნინი ბახტურიძე)</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span>
+                    ტექნოლოგიების (Top) ფუნქციები:<i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      1. ინფორმაციის შენახვა - მოწყობილობები მაგ: ტელეფონი, კომპიუტერი და ა.შ. იძლევა ინფორმაციის
+                      შენახვის საშუალებას შედარებით მცირე დროში. <br>
+                      2. გართობა და სიამოვნება - ბევრ ადამიანს შეუძლია ისიამოვნოს და გაერთოს სხვადასხვა სოციალური მედიის
+                      გამოყენებით (მაგ: Facebook, Instagram), ან სხვადასხვა კომპიუტერული თამაშების თამაშით. ფილმების
+                      ყურებით, მუსიკის მოსმენით და ა.შ<br>
+                      3. სიახლეების მიღება - საინფორმაციო წყაროები ხელმისაწვდომია მთელი დღის განმავლობაში ვებსაიტების ან
+                      სოციალური მედიის საშუალებით. <br>
+                      4. განსაკუთრებული საჭიროებების მქონე ადამიანების დახმარება - ტექნოლოგია შესაძლებელობას აძლევს
+                      სპეციალური საჭიროებების მქონე ადამიანებს, რომ გაატარონ ნორმანული ცხოვრება მრავალი გაკვეთილის
+                      მიღებით. <br>
+                      <span>&nbsp;</span><br>
+                      <span class="text-right mt-3">(ლიზი ხუნდაძე)</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span>
+                    ტექნოლოგიების უარყოფითი თვისებები: <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      ტექნოლოგიას აქვს უარყოფითი გავლენა, მათ შორის: <br>
+                      1.გავლენა სოციალურ ურთიერთობებზე: ტექნოლოგია უარყოფითად აისახება სოციალურ ურთიერთობებზე, რადგან
+                      ტექსტური შეტყობინებების ელ.ფოსტა ან სხვადასხვა პროგრამების საშვალებით კომუნიკაცია არ ცვლის
+                      პირდაპირ კონტაქტს პირისპირ რადგან ტექნოლოგიამ შეიძლება გამოიწვიოს იზოლაცია და დეპრესია სხვებთან
+                      ურთიერთობის უნარის და დაკარგვის გამო.<br>
+                      2.კონფიდენციალურობის ნაკლებობა: ტექნოლოგია ხელს უწყობს კონფიდეციალურობის ნაკლებობას რაც ნებისმიერს
+                      აძლევს უფლებას მიიღოს პირადი ინფორმაცია, როგორიცაა პირის სახელი, მისამართი და საკონტაქტო
+                      ინფორმაცია.<br>
+                      3.გავლენა ძილზე: ტექნოლოგია გავლენას ახდენს ძილის ცუდ ჩვევებზე, რადგან ინდივიდს შეუძლია გიანობამდე
+                      დარჩეს ინტერნეტში, ხოლო ტელეფონის შუქმა შეიძლება შეამციროს ჰორმონის მელატონინის სეპრეცია, ქიმიური
+                      ნივთიერება რომელიც ხელს უწყობს ძილს.<br>
+                      <span>&nbsp;</span><br>
+                      <span class="text-right mt-3">(ანი გოგაშვილი)</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span>
+                    ტექნოლოგიების უარყოფითი მხარეები 2: <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+
+                  <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      სხვა უარყოფით მხარეებს რაც შეეხება ყველაზე ხშირია ოჯახში, მშობლებთან კამათი. ტექნოლოგიებს შეუძლიათ
+                      ოჯახის წევრები დააშორონ, განაცალკეონ ერთმანეთისგან. კომუნიკაციის შემთხვევაში შესაძლოა გაღიზიანება
+                      მოჰყვეს ამ ყველაფერს. მშობლებს ყოველთვის აქვთ იმის შესახებ პრობლემა რომ მათი შვილები სულ
+                      ინტერნეტში არიან, სულ ტელეფონებს იყენებენ და ამ ყველაფერს მათი ცოდნის გამო კი არა მხოლოდ და მხოლოდ
+                      სათამაშოდ იყენებენ. ამ ყველაფერს შეგვიძლია ისიც დავამატოთ რომ მეგობრებთან არ კონტაქტობენ, შეიძლება
+                      ითქვას რომ ონლაინ აქვთ კომუნიკაცია მათ, მაგრამ ეს სრულიად განსხვავდება ერთმანეთისაგან. <br>
+                      <span>&nbsp;</span><br>
+                      <span class="text-right mt-3">(ეკა ქუტიძე)</span>
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+            style='background-image: url("assets/img/bar-chart.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+
+
+
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h4 class="text-center">მომავლის ტექნოლოგია</h4>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-6"><span>01</span>
+                    დღესდღეობით შესაძლებელია მასობრივი წარმოება და მილიონობით...<i
+                      class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-6" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      დღესდღეობით შესაძლებელია მასობრივი წარმოება და მილიონობით ადამიანს ციფრული შესაძლებლობები
+                      აქვს.მთელი რიგი ახალი ტექნოლოგიები არსებობს რომლებიც აერთიანებს ფიზიკურ, ციფრულ და ბიოლოგიურ
+                      სამყაროებს.მომავალში კიდევ უფრო გაუმჯობესებული და სხვადასხვა გვარი ტექნოლოგიები გველის, უმეტესიბა
+                      ამ პერიოდში ტესტირების ეტაპზეა.მაგალითად:
+
+
+                      "ჰიპერპეტლი"
+                      ვინც უყურა ფილმ "ფუტურამას", ალბათ ემახსოვრება მილები, რომლებსაც ფუტურამას გადაადგილებისთვის
+                      იყენებდნენ. ეს სატრანსპორტო ტექნოლოგია, ვაკუუმური მილების გამოყენებით, ქალაქებს შორის მგზავრების
+                      გადასაყვანად გამოიყენებოდა. პროგნოზირებული სიჩქარე საათში დაახლოებით 1, 300 კილომეტრია. რაც ხმის
+                      სიჩქარეზე უფრო სწრაფია.
+
+                      იმისათვის, რომ ხანმოკლე მგზავრობა უფრო სასიამოვნო და საინტერესო გახდეს, მილებში იქნება ციფრული
+                      ეკრანები. დამტკიცებულია, რომ “ჰიპერპეტლი" უფრო ეფექტური ეკონომიური სატრანსპორტო საშუალება იქნება,
+                      ვიდრე ნებისმიერი სხვა. მიუხედავად იმისა, რომ ტექნოლოგია ჯერ კიდევ ტესტირების ეტაპზეა, უახლოეს
+                      მომავალში შესაძლებელი გახდება მგზავრობა.
+                      ჰიპერპეტლი ძალიან დაბალ ენერგიას მოიხმარს. ასევე ეს არის იაფი სატრანსპორტო სისტემა გრძელვადიან
+                      პერსპექტივაში. ის იმუნურია ცუდი ამიდის მიმართ და მდგრადია მიწისძვრის მიმართ.
+                      რათქმაუნდა ჰიპერპეტლს უარყოფითი მხარეებიც აქვს. კაფსულის მაღალმა სიჩქარემ შესაძლოა გამოიწვიოს
+                      თაბრუსხვევა. სისტემის დანერგვისთვის ინვესტიციის საწყისი ღირებულება მაღალია ხოლო მისი შენარჩუნება
+                      სარისკოა.
+                      ასევე მას შეზღუდული სივრცე აქვს რის გამოც მგზავრი თავისუფლად ვერ გადაადგილდება. ვინაიდან
+                      ჰიპერპეტრი იყენებს ფოლადს ტრასისთვის, ის ფორმას იცვლის გარე ტემპერატურის ცვლილებისას.
+                      ასევე ჰიპერლეტლის ინსტალაციისთვის ბევრი ხის მოჭრა არის საჭირო რაც გარემოს საფრთხეს უქმნის.
+                      <span>&nbsp;</span><br>
+                      <span class="text-right mt-3">(ნინი ბახტურიძე)</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span>
+                    ტექნოლოგიების (Top) ფუნქციები:<i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      1. ინფორმაციის შენახვა - მოწყობილობები მაგ: ტელეფონი, კომპიუტერი და ა.შ. იძლევა ინფორმაციის
+                      შენახვის საშუალებას შედარებით მცირე დროში. <br>
+                      <span>&nbsp;</span><br>
+                      2. გართობა და სიამოვნება - ბევრ ადამიანს შეუძლია ისიამოვნოს და გაერთოს სხვადასხვა სოციალური მედიის
+                      გამოყენებით (მაგ: Facebook, Instagram), ან სხვადასხვა კომპიუტერული თამაშების თამაშით. ფილმების
+                      ყურებით, მუსიკის მოსმენით და ა.შ<br>
+                      <span>&nbsp;</span><br>
+                      3. სიახლეების მიღება - საინფორმაციო წყაროები ხელმისაწვდომია მთელი დღის განმავლობაში ვებსაიტების ან
+                      სოციალური მედიის საშუალებით. <br>
+                      <span>&nbsp;</span><br>
+                      4. განსაკუთრებული საჭიროებების მქონე ადამიანების დახმარება - ტექნოლოგია შესაძლებელობას აძლევს
+                      სპეციალური საჭიროებების მქონე ადამიანებს, რომ გაატარონ ნორმანული ცხოვრება მრავალი გაკვეთილის
+                      მიღებით. <br>
+                      <span>&nbsp;</span><br>
+                      <span class="text-right mt-3">(ლიზი ხუნდაძე)</span>
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span>
+                    ტექნოლოგიების უარყოფითი თვისებები: <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      ტექნოლოგიას აქვს უარყოფითი გავლენა, მათ შორის: <br>
+                      1.გავლენა სოციალურ ურთიერთობებზე: ტექნოლოგია უარყოფითად აისახება სოციალურ ურთიერთობებზე, რადგან
+                      ტექსტური შეტყობინებების ელ.ფოსტა ან სხვადასხვა პროგრამების საშვალებით კომუნიკაცია არ ცვლის
+                      პირდაპირ კონტაქტს პირისპირ რადგან ტექნოლოგიამ შეიძლება გამოიწვიოს იზოლაცია და დეპრესია სხვებთან
+                      ურთიერთობის უნარის და დაკარგვის გამო.<br>
+                      <span>&nbsp;</span><br>
+                      2.კონფიდენციალურობის ნაკლებობა: ტექნოლოგია ხელს უწყობს კონფიდეციალურობის ნაკლებობას რაც ნებისმიერს
+                      აძლევს უფლებას მიიღოს პირადი ინფორმაცია, როგორიცაა პირის სახელი, მისამართი და საკონტაქტო
+                      ინფორმაცია.<br>
+                      <span>&nbsp;</span><br>
+                      3.გავლენა ძილზე: ტექნოლოგია გავლენას ახდენს ძილის ცუდ ჩვევებზე, რადგან ინდივიდს შეუძლია გიანობამდე
+                      დარჩეს ინტერნეტში, ხოლო ტელეფონის შუქმა შეიძლება შეამციროს ჰორმონის მელატონინის სეპრეცია, ქიმიური
+                      ნივთიერება რომელიც ხელს უწყობს ძილს.<br>
+                      <span>&nbsp;</span><br>
+                      <span class="text-right mt-3">(ანი გოგაშვილი)</span>
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+            style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+
+
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <h4 class="text-center">ჩატარებული გამოკითხვები:</h4>
+      <h6 class="text-center m-3 g" style="color: var(--text-color-1) !important;">ჩვენ წარმოდგენილი გვაქვს ორი ტიპის დიაგრამა სადაც შეყვანილია 2022-2023 წლის მსოფლიოში ჩატარებული <br> კვლევის შედეგები თუ რამდენად არიან დამოკიდებული თანამედროვე ტექნიკაზე.</h6>
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active chart-btn" id="pills-home-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+              aria-selected="true">ხაზოვანი დიაგრამა</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link chart-btn" id="pills-profile-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+              aria-selected="false">წრიული დიაგრამა</button>
+          </li>
+        </ul>
+
+
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/skills.png" class="img-fluid skil-img" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="skills-content">
+
+                  <div class="progress">
+                    <span class="skill">5-10 წლამდე <i class="val">20%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="progress">
+                    <span class="skill">10-30 წლამდე <i class="val">40%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="progress">
+                    <span class="skill">30-60 წლამდე <i class="val">30%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="progress">
+                    <span class="skill">60-90 <i class="val">10%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="card-body pie-charting">
+
+                  <!-- Pie Chart -->
+                  <div id="pieChart"></div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      new ApexCharts(document.querySelector("#pieChart"), {
+                        series: [20, 40, 30, 10],
+                        chart: {
+                          height: 350,
+                          type: 'pie',
+                          toolbar: {
+                            show: true
+                          }
+                        },
+                        labels: ['5-10 წლამდე', '10-30 წლამდე', '30-60 წლამდე', '60-90 წლამდე']
+                      }).render();
+                    });
+                  </script>
+                  <!-- End Pie Chart -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3 style="color: white !important;">ყურადღება!</h3>
+            <p>დიაგრამებზე მოცემული ინფორმაცია არის 2022 წლის 15 აგვისტოს ჩატარებული კვლევების შედეგად მიღებული. სამწუხაროდ დიაგრამას არ აქვს ავტომატურად განახლებადი სისტემა ამიტომ შესაძლებელია დღეის მონაცემები არ იყოს იდენტური ამ ინფორმაციულ წყაროსთან. რა უნდა ვქნა იმ შემთხვევაში თუ უახლესი მონაცემები მაინტერესებს? დააკლიკეთ უახლესის ღილაკს.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="https://infogram.com/">უახლესი</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>ფოტოსურათები</h2>
+          <p>ფოტოსურათები დალაგებულია გაფილტვრის ფუნქციით თქვენ შეგიძლიათ ნახოთ ახალი და ძველი ტექნოლოგიების ფოტოები, რაც იმის საშუალებას მოგცემთ გაანალიზოთ თუ რამდენად სწრაფად მოხდა ტექნოლოგიების განვითარება.</p>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">ყველა</li>
+          <li data-filter=".filter-app">ახალი</li>
+          <li data-filter=".filter-card">ძველი</li>
+        </ul>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/iphone.jpeg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Modern Mobile</h4>
+              <a href="assets/img/iphone.jpeg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Modern Phone"><i class="bx bx-plus"></i></a>
+              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/mac.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Modern computer</h4>
+              <p>2022-2023</p>
+              <a href="assets/img/mac.webp" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Modern computer"><i class="bx bx-plus"></i></a>
+              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/new watch.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Modern Watch</h4>
+              <p>2022-2023</p>
+              <a href="assets/img/new watch.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Modern Watch"><i class="bx bx-plus"></i></a>
+              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/new tv.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Modern TV</h4>
+              <p>2022-2023</p>
+              <a href="assets/img/new tv.jpg.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Modern TV"><i class="bx bx-plus"></i></a>
+              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/old pc.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Old Computer</h4>
+              <p>1970-1975</p>
+              <a href="assets/img/old pc.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Old Computer"><i class="bx bx-plus"></i></a>
+              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/old watch.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Old Watch</h4>
+              <p>1800-1950</p>
+              <a href="assets/img/old watch.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Old watch"><i class="bx bx-plus"></i></a>
+              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/old tv.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Old TV</h4>
+              <p>1940-1960</p>
+              <a href="assets/img/old tv.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Old TV"><i class="bx bx-plus"></i></a>
+              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/old phone.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Old Mobile</h4>
+              <p>1990-2002</p>
+              <a href="assets/img/old phone.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Old phone"><i class="bx bx-plus"></i></a>
+              <a href="" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  <!-- ScrollBar -->
+  <div id="progress">
+  </div>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>გამოიწერეთ Infobox</h4>
+            <p>შეიყვანეთ თქვენი ელფოსტა და გამოგვიწერეთ ასე არასდროს გამოტოვებთ განახლებებს ამ ვებ-გვერდზე</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="გამოწერა">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>InfoBox</h3>
+            <p>
+              <strong>მადლობას გიხდით ვებ-გვერდის მოხმარებისათვის!</strong><br>
+              <strong>ელოდეთ სხვა უფრო მაგარ და საინტერესო სიახლეებს</strong><br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>ხშირი ბმულები</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">მთავარი გვერდი</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Infobox Note</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Infobox Quiz</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>ყველაზე საინტერესო</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">ტექნოლოგიების განვითარება</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">მომავლის ტექნოლოგიები</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>სოციალური ბმულები</h4>
+            <p style="color: var(--text-color-1)">აქ მითითებულია იმ ადამიანის ბმულები, რომელმაც ეს ვებ-გვერდი დააპროექტა და ააწყო.</p>
+            <div class="social-links mt-3">
+              <a href="https://www.facebook.com/profile.php?id=100088841825258" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="webinvent.ge" class="instagram"><i class="fa-solid fa-globe"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>InfoBox</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       დამზადებულია <a style="color: black;" href="https://www.facebook.com/profile.php?id=100088841825258">გაგა ბერიძის</a> მიერ.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
